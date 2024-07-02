@@ -27,9 +27,9 @@
             </div>
             <div class="profile">
                 <div class="div-img">
-                    <img class="profile-img" src="assets/heros.jpg" alt="profile" onclick="window.location.href= `http://127.0.0.1:5500/Pages/Profile-Page/Profile.html`">
+                    <img class="profile-img"  id="user-image-nav" alt="profile" onclick="window.location.href= `http://127.0.0.1:5500/Pages/Profile-Page/Profile.html`">
                 </div>
-                <a href="../Profile-Page/Profile.html" class="userNameNave">Obada</a>
+                <a href="../Profile-Page/Profile.html" class="userNameNave" id="userName"></a>
                
                     <button type="submit" id="nav-logout" onclick="window.location.href = window.location.href = `http://127.0.0.1:5500/Pages/Home-Page/index.html`">Log Out</button>
                   </select>
@@ -44,14 +44,12 @@
             <p>We're here to help you with any problems you may be having with <br>our product.</p>
         </div>
         <div class="container">
-            <img src="../About-Us/images/us-img.png" alt="">
-            <div class="text">
-               Contact us 
-            </div>
+            <img src="baor-logo.png" alt="">
+
             <form action="#">
                <div class="form-row">
                   <div class="input-data">
-                     <input type="text" required>
+                     <input type="text" placeholder="First Name " required>
                      <div class="underline"></div>
                      <label for="">First Name</label>
                   </div>
@@ -140,6 +138,6 @@
         </div>
     </footer>
     
-    
+    <script type="module" src="../../Controllers/appBarConttroller.js"></script>
 </body>
 </html>

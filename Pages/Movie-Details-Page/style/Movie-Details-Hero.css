@@ -6,7 +6,6 @@
 }
 
 #Movie-Details{
-    background-image: linear-gradient(#00000000,#0000008f),url("../assets/heros.jpg");
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;

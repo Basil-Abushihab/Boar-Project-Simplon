@@ -33,9 +33,9 @@
                 </div>
                 <div class="profile">
                     <div class="div-img">
-                        <img class="profile-img" src="assets/heros.jpg" alt="profile" onclick="window.location.href= `http://127.0.0.1:5500/Pages/Profile-Page/Profile.html`">
+                        <img class="profile-img" src="" alt="profile" id="user-image-nav" onclick="window.location.href= `http://127.0.0.1:5500/Pages/Profile-Page/Profile.html`">
                     </div>
-                    <a href="../Profile-Page/Profile.html" class="userNameNave">Obada</a>
+                    <a href="../Profile-Page/Profile.html" class="userNameNave" id="userName"></a>
                    
                         <button  id="nav-logout" onclick="window.location.href = window.location.href = `http://127.0.0.1:5500/Pages/Home-Page/index.html`">Log Out</button>
                       </select>
@@ -46,7 +46,7 @@
         <div class="hero-section">
             <img src="baor-logo.png" alt="">
             <p>"Discover a world of enchanting sci-fi movies - thrilling adventures, thought-provoking dramas and epic action await you here!"</p>
-            <p>"Welcome <span id="usre'sName">Name </span>to the ultimate sci-fi movie site, where we take you on a cinematic journey through galaxies and beyond. Enjoy exploring an extensive library featuring the latest sci-fi releases and timeless classics. Whether you're seeking a new film to watch on a quiet night or yearning to delve into futuristic masterpieces from around the world, you'll find everything you desire right here. Join us and immerse yourself in the exhilarating world of sci-fi cinema!"</p>
+            <p>"Welcome <span id="user-Name"> </span>to the ultimate sci-fi movie site, where we take you on a cinematic journey through galaxies and beyond. Enjoy exploring an extensive library featuring the latest sci-fi releases and timeless classics. Whether you're seeking a new film to watch on a quiet night or yearning to delve into futuristic masterpieces from around the world, you'll find everything you desire right here. Join us and immerse yourself in the exhilarating world of sci-fi cinema!"</p>
             <button onclick="window.location.href = window.location.href = `http://127.0.0.1:5500/Pages/Movies-Catalouge-Page/Movies-Catalouge.html`">
                 <i class="fas fa-play" id="in-button"></i>
                 <p>Start Watching Now</p>
@@ -152,5 +152,6 @@
             </div>
         </footer>
         <script type="module" src="homePage.js"></script>
+        <script type="module" src="../../Controllers/appBarConttroller.js"></script>
     </body>
     </html>

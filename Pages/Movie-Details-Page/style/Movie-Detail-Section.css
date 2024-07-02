@@ -28,7 +28,7 @@
     color: white ;
     margin-bottom: 2rem;
 }
-.Star-Cards-Container{
+#Star-Cards-Container{
     width: 60rem;
     display: flex;
     justify-content: space-evenly;

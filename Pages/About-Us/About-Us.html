@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style/About-Us-style.css">
     <title>About-us</title>
 </head>
-<body style="background-image: url(Images/background.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;">
+<body style="background-image: url(images/background.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;">
     <header>
         <div class="display">
         <div class="nav-bar">
@@ -27,9 +27,9 @@
             </div>
             <div class="profile">
                 <div class="div-img">
-                    <img class="profile-img" src="assets/heros.jpg" alt="profile" onclick="window.location.href= `http://127.0.0.1:5500/Pages/Profile-Page/Profile.html`">
+                    <img id="user-image-nav" class="profile-img" alt="profile" onclick="window.location.href= `http://127.0.0.1:5500/Pages/Profile-Page/Profile.html`">
                 </div>
-                <a href="../Profile-Page/Profile.html" class="userNameNave">Obada</a>
+                <a href="../Profile-Page/Profile.html" id="userName" class="userNameNave"></a>
                
                     <button type="submit" id="nav-logout" onclick="window.location.href = window.location.href = `http://127.0.0.1:5500/Pages/Home-Page/index.html`">Log Out</button>
                   </select>
@@ -96,5 +96,6 @@
             </ul>
         </div>
     </footer>
+    <script type="module" src="../../Controllers/appBarConttroller.js"></script>
 </body>
 </html>

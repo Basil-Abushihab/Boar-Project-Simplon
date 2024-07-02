@@ -44,9 +44,9 @@
           </div>
           <div class="profile">
               <div class="div-img">
-                  <img class="profile-img" src="assets/heros.jpg" alt="profile" onclick="window.location.href= `http://127.0.0.1:5500/Pages/Profile-Page/Profile.html`">
+                  <img class="profile-img" src="" id="user-image-nav" alt="profile" onclick="window.location.href= `http://127.0.0.1:5500/Pages/Profile-Page/Profile.html`">
               </div>
-              <a href="../Profile-Page/Profile.html" class="userNameNave">Obada</a>
+              <a href="../Profile-Page/Profile.html" class="userNameNave" id="userName"></a>
              
                   <button type="submit" id="nav-logout" onclick="window.location.href = window.location.href = `http://127.0.0.1:5500/Pages/Home-Page/index.html`">Log Out</button>
                 </select>
@@ -58,8 +58,8 @@
     <section id="Movie-HeroSection">
       <div id="Movie-Details">
         <div id="Movie-Title-Description">
-          <h1>Movie Title</h1>
-          <p>
+          <h1 id="Movie-Title">Movie Title</h1>
+          <p id="Movie-Description">
             A fiery young man clashes with an unflinching forest officer in a
             south Indian village where spirituality, fate and folklore rule the
             lands.
@@ -76,8 +76,7 @@
         <div id="Left-Sections">
           <div id="Staring-Section">
               <p class="Staring-SectionTitle">Staring</p>
-              <div class="Star-Cards-Container">
-                <div class="Star-Cards">Matthew</div>
+              <div id="Star-Cards-Container" >
               </div>
           </div>
           <div id="Reviews-Section">
@@ -119,11 +118,11 @@
           </div>
           <p class="releaseProduction" id="yearOfProduction">2014</p>
          
-          <p class="directorName">Genre</p>
+          <p class="directorName" >Genre</p>
           <p class="director" id="genreOfMovie">Action</p>
-          <p class="directorName">Language</p>
+          <p class="directorName" >Language</p>
           <p class="director" id="languageOfMovie">French</p>
-          <p class="directorName">Director</p>
+          <p class="directorName" id="">Director</p>
           <p class="director" id="directorOfMovie">someone</p>
 
         </div>
@@ -179,6 +178,8 @@
     </footer>
     
 
-    <script type="module" src="java.js"></script>
+    
+    <script type="module" src="../../Controllers/appBarConttroller.js"></script>
+    <script src="../../Controllers/movieDetailsDisplay/displayMovieDetails.js"></script>
   </body>
 </html>

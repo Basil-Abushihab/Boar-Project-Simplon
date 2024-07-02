@@ -5,6 +5,8 @@ import {
   createUserWithEmailAndPassword,
   sendEmailVerification,
   signInWithEmailAndPassword,
+  GoogleAuthProvider,
+  signInWithPopup,
 } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 import {
   getDatabase,
@@ -31,6 +33,7 @@ const firebaseConfig = {
   messagingSenderId: "544542622273",
   appId: "1:544542622273:web:c73467b408819f34befcc0",
   measurementId: "G-KER7P3R8LS",
+  signInWithPopup,
 };
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
@@ -56,7 +59,6 @@ export {
   child,
   query,
   getStorage,
+  GoogleAuthProvider,
+  signInWithPopup,
 };
-
-
-
