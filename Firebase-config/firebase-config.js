@@ -23,7 +23,8 @@ import { getStorage } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-s
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
+
+const firebaseConfig = {  /* المصادقه لفير بيس  */
   apiKey: "AIzaSyDWyRt-9CbwrUeUb8Dl2ldkLoJQ5gEJMfg",
   authDomain: "baor-project.firebaseapp.com",
   databaseURL:
@@ -35,10 +36,10 @@ const firebaseConfig = {
   measurementId: "G-KER7P3R8LS",
   signInWithPopup,
 };
-// Initialize Firebase
+// Initialize Firebase هون تهيئه
 const app = initializeApp(firebaseConfig);
 const createUser = createUserWithEmailAndPassword;
-const auth = getAuth(app);
+const auth = getAuth(app);                                          
 const database = getDatabase(app);
 const reference = ref;
 const addData = set;
