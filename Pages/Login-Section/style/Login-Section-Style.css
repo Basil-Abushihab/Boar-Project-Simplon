@@ -8,7 +8,6 @@ html {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-left: 7.9rem;
     
    
 }
@@ -95,3 +94,37 @@ label{
         opacity: 0;
     }
     }
+    @media (max-width: 1000px){
+        #images-view{
+            display: none;
+        }
+        #Login-Fields{
+            border-radius: 0.75rem;
+        }
+    }
+    @media (max-width: 580px){
+       .Login-TextFields{
+        width: 20rem;
+        height: 3rem;
+       }
+       #Login-Fields{
+        width: 26rem;
+       }
+       #Login-form-section{
+        justify-content: center;
+        align-items: center;
+       }
+    }
+    @media (max-width: 480px){
+        .Login-TextFields{
+         width: 18rem;
+         height: 3rem;
+        }
+        #Login-Fields{
+         width: 23rem;
+        }
+        #Login-form-section{
+         justify-content: center;
+         align-items: center;
+        }
+     }

@@ -17,3 +17,19 @@
     width: 2.5rem;
     margin-right:1rem ;
 }
+@media (max-width: 580px){
+    #Login-Button{
+        width: 20rem;
+        height: 3rem;} 
+        #Login-Google{
+            width: 20rem;
+            height: 3rem;} 
+}
+@media (max-width: 480px){
+    #Login-Button{
+        width: 18rem;
+        height: 3rem;} 
+        #Login-Google{
+            width: 18rem;
+            height: 3rem;} 
+}

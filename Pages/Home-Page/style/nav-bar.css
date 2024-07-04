@@ -119,12 +119,14 @@ body {
 .logo{
     cursor: pointer;
 }
-@media (max-width: 768px) {
+@media (max-width: 850px) {
     .nav-bar {
         flex-direction: column;
         align-items: center;
     }
-
+    #nav-logout{
+        margin-left: 0rem;
+    }
     .logo, .hamburger-menu {
         width: 100%;
         display: flex;

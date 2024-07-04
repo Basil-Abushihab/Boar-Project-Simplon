@@ -233,3 +233,105 @@ form.example input[type=text] {
 form.example  .btn-filter:hover {
     background: #0b7dda;
   }
+/* Responsive design */
+@media (max-width: 1300px) {
+  .slideshow-container {
+      width: 100%;
+      height: auto; 
+      margin-top: 1.5rem;
+  }
+  .mySlides img {
+      width: 100%;
+      height: auto; 
+      border-radius: 0.75rem;
+  }
+  .prev, .next {
+      font-size: 16px;
+      padding: 12px;
+  }
+  .bt-hero {
+      flex-direction: column;
+      gap: 0.5rem;
+      bottom: 1rem;
+  }
+  .bt-hero .fav {
+      height: 2.5rem;
+      width: 4rem;
+      padding-bottom: 1.5rem;
+  }
+  .play-bt {
+      width: 6rem;
+      height: 2.5rem;
+  }
+  .text {
+      font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .slideshow-container {
+      width: 100%;
+      height: auto; 
+      margin-top: 1rem;
+  }
+  .prev, .next {
+      font-size: 14px;
+      padding: 10px;
+  }
+  .bt-hero {
+      flex-direction: column;
+      gap: 0.5rem;
+      bottom: 1rem;
+      display: none;
+  }
+  .bt-hero .fav {
+      height: 2rem;
+      width: 3rem;
+      padding-bottom: 1rem;
+  }
+  .play-bt {
+      width: 5rem;
+      height: 2rem;
+  }
+  .text {
+      font-size: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .slideshow-container {
+      width: 100%;
+      height: auto; 
+      margin-top: 1rem;
+  }
+  .prev, .next {
+      font-size: 12px; 
+      padding: 8px;
+  }
+  .bt-hero {
+      flex-direction: column;
+      gap: 0.5rem;
+      bottom: 1rem;
+  }
+  .bt-hero .fav {
+      height: 1.75rem; 
+      width: 2.5rem; 
+      padding-bottom: 0.75rem;
+  }
+  .play-bt {
+      width: 4rem;
+      height: 1.75rem; 
+  }
+  .text {
+      font-size: 0.6rem; 
+  }
+}
+@media (max-width: 800px) {
+  #search-form div{
+    display: flex;
+    justify-content:center;
+ 
+    width: 400px
+   
+  }
+}

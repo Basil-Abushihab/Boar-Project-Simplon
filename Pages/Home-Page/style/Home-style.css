@@ -56,19 +56,7 @@ body {
     transform: scale(1.1);
 
 }
-#fav-card{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 17.4rem;
-}
-#fav-card .fa-plus{
-    background-color: white;
-    color: #1E2935;
-    border-radius: 100%;
-    padding: 0.8rem;
-}
+
 .card .title {
     font-size: 0.9rem;
     font-weight: 600;
@@ -131,7 +119,7 @@ padding: 0rem;
     padding: 1rem;
 }
 
-@media (max-width: 1330px){
+@media (max-width: 1390px){
     .card:nth-child(n+5) {
         display: none;
       }
@@ -145,17 +133,83 @@ padding: 0rem;
 
 }
 @media (max-width: 935px){
+   
+      .cards-container .card{
+        width: 9rem;
+        margin: 0.8rem;
+      }
+      .card .title {
+        font-size: 0.8rem;
+        height: 1.6rem;}
+        .card .poster{
+            width: 7rem;
+            height: 8rem;
+        }
+        .info {
+            font-size: 0.5rem;}
+            .fa-play{
+                width: 1.5rem;
+                height: 1.5rem;}
+        .cards-container{
+           
+            padding: 0rem;
+        }
+        .info .genre{
+            padding: 0.5rem;
+            margin-left: 0.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+       
+}
+@media (max-width: 785px){
+    .hero-section button{
+        width: 8rem;
+    }
+    }
+    @media (max-width: 790px){
+        .cards-container .card{
+            width: 8rem;
+        }
+        .card .poster{
+            width: 6rem;
+        }
+    }
+ @media (max-width: 670px){
     .card:nth-child(n+3) {
         display: none;
       }
-      
-
-}
-@media (max-width: 705px){
-    .card:nth-child(n+2) {
-        display: none;
-      }
-      
-}
-
+      .cards-container .card{
+        width: 9rem;
+    }
+    .card .poster{
+        width: 7rem;
+    }
+    }  
+    @media (max-width: 550px){
+        .cards-container .card{
+            width: 8rem;
+        }
+        .card .poster{
+            width: 6rem;
+        }
+    }
+     @media (max-width: 515px){
+        .card:nth-child(n+2) {
+            display: none;
+          }
+          .cards-container .card{
+            width: 12rem;
+        }
+        .card .poster{
+            width: 9rem;
+            height: 10rem;
+        }
+} 
+@media (max-width: 785px){
+    .hero-section button{
+        width: 12rem;
+    }
+    }
  

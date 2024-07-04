@@ -1,4 +1,4 @@
-body {
+/* body {
     margin: 0;
     padding: 0;
     font-family: 'Manrope', sans-serif;
@@ -145,4 +145,6 @@ body {
     .menu-toggle:checked ~ .content ul {
         display: flex;
     }
-}
+} */
+ 
+  

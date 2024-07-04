@@ -12,7 +12,7 @@ function getFirstMovies() {
   retrieveData(moviesRef, (snapshot) => {
     if (snapshot.exists()) {
       const moviesData = snapshot.val();
-      for (let i = 0; i <= 3; i++) {
+      for (let i = 0; i <= 4; i++) {
         createMovieCard(moviesData[i]);
       }
     } else {
@@ -25,7 +25,6 @@ getFirstMovies();
 function createMovieCard(movie) {
   console.log(movie);
   let container = document.getElementById("group1");
-  let add = document.getElementById("fav-card");
   const card = document.createElement("div");
 
   card.classList.add("card");
@@ -47,16 +46,12 @@ function createMovieCard(movie) {
         
     `;
   container.appendChild(card);
-  card.after(add);
-  card.style.backgroundImage = "movie.imageVertical";
+  
   card.addEventListener("click", () => {
     sessionStorage.setItem("movie", JSON.stringify(movie));
     window.location.href = `http://127.0.0.1:5500/Pages/Movie-Details-Page/Movie-Details.html`;
   });
-  add.addEventListener("click", () => {
-    sessionStorage.setItem("movie", JSON.stringify(movie));
-    window.location.href = `http://127.0.0.1:5500/Pages/Movies-Catalouge-Page/Movies-Catalouge.html`;
-  });
+  
   return card;
 }
 
@@ -66,7 +61,7 @@ function getSecondMovies() {
   retrieveData(moviesRefSecond, (snapshot) => {
     if (snapshot.exists()) {
       const moviesDataSecond = snapshot.val();
-      for (let i = 4; i <= 8; i++) {
+      for (let i = 6; i <= 10; i++) {
         createMovieCardSecond(moviesDataSecond[i]);
       }
     } else {
@@ -99,7 +94,7 @@ function createMovieCardSecond(movie) {
         </div>
     `;
   containerSecond.appendChild(cardSecond);
-  cardSecond.style.backgroundImage = "movie.imageVertical";
+ 
   cardSecond.addEventListener("click", () => {
     sessionStorage.setItem("movie", JSON.stringify(movie));
     window.location.href = `http://127.0.0.1:5500/Pages/Movie-Details-Page/Movie-Details.html`;
@@ -143,7 +138,7 @@ function createMovieCardThird(movie) {
       </div>
   `;
   containerThird.appendChild(cardThird);
-  cardThird.style.backgroundImage = "movie.imageVertical";
+  
   cardThird.addEventListener("click", () => {
     sessionStorage.setItem("movie", JSON.stringify(movie));
     window.location.href = `http://127.0.0.1:5500/Pages/Movie-Details-Page/Movie-Details.html`;
@@ -155,7 +150,7 @@ function getForthMovies() {
   retrieveData(moviesRefForth, (snapshot) => {
     if (snapshot.exists()) {
       const moviesDataForth = snapshot.val();
-      for (let i = 14; i <= 18; i++) {
+      for (let i = 13; i <= 17; i++) {
         createMovieCardForth(moviesDataForth[i]);
       }
     } else {
@@ -187,7 +182,7 @@ function createMovieCardForth(movie) {
       </div>
   `;
   containerForth.appendChild(cardForth);
-  cardForth.style.backgroundImage = "movie.imageVertical";
+ 
   cardForth.addEventListener("click", () => {
     sessionStorage.setItem("movie", JSON.stringify(movie));
     window.location.href = `http://127.0.0.1:5500/Pages/Movie-Details-Page/Movie-Details.html`;
@@ -199,7 +194,7 @@ function getFifthMovies() {
   retrieveData(moviesRefFifth, (snapshot) => {
     if (snapshot.exists()) {
       const moviesDataFifth = snapshot.val();
-      for (let i = 19; i <= 23; i++) {
+      for (let i = 12; i <= 16; i++) {
         createMovieCardFifth(moviesDataFifth[i]);
       }
     } else {
@@ -231,7 +226,6 @@ function createMovieCardFifth(movie) {
       </div>
   `;
   containerFifth.appendChild(cardFifth);
-  cardFifth.style.backgroundImage = "movie.imageVertical";
   cardFifth.addEventListener("click", () => {
     sessionStorage.setItem("movie", JSON.stringify(movie));
     window.location.href = `http://127.0.0.1:5500/Pages/Movie-Details-Page/Movie-Details.html`;
