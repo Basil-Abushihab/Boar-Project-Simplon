@@ -10,6 +10,7 @@ import {
 } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 import {
   getDatabase,
+  push,
   ref,
   set,
   child,
@@ -61,4 +62,5 @@ export {
   getStorage,
   GoogleAuthProvider,
   signInWithPopup,
+  push,
 };

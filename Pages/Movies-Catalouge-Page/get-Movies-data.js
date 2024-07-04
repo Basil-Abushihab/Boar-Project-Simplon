@@ -94,11 +94,30 @@ const filterMoviesBySearch = (movies, searchQuery) => {
   );
 };
 
-function searchMovies() {
+function searchMovies(e) {
+  e.preventDefault();
+  console.log("Hello");
   const searchTerm = document.getElementById("searchInput").value.toLowerCase();
-  const filteredMovies = filterMoviesBySearch(allMovies, searchTerm);
+  let filteredMovies = filterMoviesBySearch(allMovies, searchTerm);
+  const genreSelect = document.getElementById("genre-filter");
+  const genreValue = genreSelect.value;
+  filteredMovies = filterByGenre(filteredMovies, genreValue);
   displayMovies(filteredMovies);
 }
 
-document.getElementById("searchInput").addEventListener("input", searchMovies);
+function filterByGenre(moviesToFilter, filterCriteria) {
+  console.log(moviesToFilter[0].genre);
+  let filteredMovies = [];
+  if (!filterCriteria) {
+    return moviesToFilter;
+  }
+  for (let i = 0; i < moviesToFilter.length; i++) {
+    if (moviesToFilter[i].genre == filterCriteria) {
+      filteredMovies.push(moviesToFilter[i]);
+    }
+  }
+  return filteredMovies;
+}
+
+document.getElementById("filter").addEventListener("click", searchMovies);
 document.addEventListener("DOMContentLoaded", fetchMovies);
